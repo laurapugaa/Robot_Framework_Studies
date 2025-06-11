@@ -1,96 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-11T08:43:42.856892" rpa="false" schemaversion="5">
-<suite id="s1" name="While" source="d:\AUTOMAÇÃO\Robot_Framework\adopet-for-robot\while.robot">
-<test id="s1-t1" name="Cso de teste FOR" line="12">
-<kw name="5 - Usando o While Loop">
-<while condition="${COUNT} &lt; 5">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.917956" level="INFO">O contador é: 0</msg>
-<arg>O contador é: ${COUNT}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.917462" elapsed="0.004668"/>
+<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-11T11:51:03.188872" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="d:\AUTOMAÇÃO\Robot_Framework\login-robot\login.robot">
+<test id="s1-t1" name="Cenário 5:" line="85">
+<kw name="Abrir site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:03.512790" level="INFO">Opening browser 'chrome' to base url 'https://adopet-frontend-cypress.vercel.app/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-11T11:51:03.512405" elapsed="1.875891"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.923895" level="INFO">${COUNT} = 1</msg>
-<var>${COUNT}</var>
-<arg>${COUNT} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.922806" elapsed="0.001524"/>
+<status status="PASS" start="2025-06-11T11:51:03.511612" elapsed="1.876975"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.916325" elapsed="0.008300"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.925907" level="INFO">O contador é: 1</msg>
-<arg>O contador é: ${COUNT}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.925354" elapsed="0.001136"/>
+<kw name="Inserir Email e Senha Válidos">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:05.391641" level="INFO">Clicking element '//*[@id="email"]'.</msg>
+<arg>${LOCATOR_EMAIL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T11:51:05.390527" elapsed="0.086314"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.928029" level="INFO">${COUNT} = 2</msg>
-<var>${COUNT}</var>
-<arg>${COUNT} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.927067" elapsed="0.001333"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:05.477962" level="INFO">Typing text 'laurapuga@alu.ufc.br' into text field '//*[@id="email"]'.</msg>
+<arg>${LOCATOR_EMAIL}</arg>
+<arg>text=laurapuga@alu.ufc.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T11:51:05.477317" elapsed="0.089136"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.924798" elapsed="0.003921"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.929977" level="INFO">O contador é: 2</msg>
-<arg>O contador é: ${COUNT}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.929588" elapsed="0.000670"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:05.566981" level="INFO">Clicking element '//*[@id="pass"]'.</msg>
+<arg>${LOCATOR_PASSWORD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T11:51:05.566703" elapsed="0.053449"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.931079" level="INFO">${COUNT} = 3</msg>
-<var>${COUNT}</var>
-<arg>${COUNT} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.930557" elapsed="0.000741"/>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:05.620817" level="INFO">Typing password into text field '//*[@id="pass"]'.</msg>
+<msg time="2025-06-11T11:51:05.698227" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${LOCATOR_PASSWORD}</arg>
+<arg>text=L2abcdefgh</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T11:51:05.620470" elapsed="0.122149"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.928982" elapsed="0.002518"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.933332" level="INFO">O contador é: 3</msg>
-<arg>O contador é: ${COUNT}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.932781" elapsed="0.000912"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOCATOR_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-06-11T11:51:05.742938" elapsed="0.296882"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.935273" level="INFO">${COUNT} = 4</msg>
-<var>${COUNT}</var>
-<arg>${COUNT} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.934245" elapsed="0.001317"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-11T11:51:06.041080" level="INFO">Clicking button '//*[@id="root"]/main/section/form/button'.</msg>
+<arg>${LOCATOR_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T11:51:06.040310" elapsed="0.058661"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.932005" elapsed="0.003768"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.936806" level="INFO">O contador é: 4</msg>
-<arg>O contador é: ${COUNT}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.936431" elapsed="0.000643"/>
+<status status="PASS" start="2025-06-11T11:51:05.389552" elapsed="0.709631"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-06-11T08:43:42.937917" level="INFO">${COUNT} = 5</msg>
-<var>${COUNT}</var>
-<arg>${COUNT} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-06-11T08:43:42.937373" elapsed="0.000816"/>
+<kw name="Fechar site">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-11T11:51:06.100074" elapsed="2.119852"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.935921" elapsed="0.002459"/>
-</iter>
-<status status="PASS" start="2025-06-11T08:43:42.916322" elapsed="0.022409"/>
-</while>
-<status status="PASS" start="2025-06-11T08:43:42.915430" elapsed="0.023699"/>
+<status status="PASS" start="2025-06-11T11:51:06.099711" elapsed="2.120710"/>
 </kw>
-<status status="PASS" start="2025-06-11T08:43:42.913970" elapsed="0.025854"/>
+<status status="PASS" start="2025-06-11T11:51:03.510881" elapsed="4.710248"/>
 </test>
-<status status="PASS" start="2025-06-11T08:43:42.868191" elapsed="0.074177"/>
+<status status="PASS" start="2025-06-11T11:51:03.195032" elapsed="5.028400"/>
 </suite>
 <statistics>
 <total>
@@ -99,7 +71,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="While" id="s1" pass="1" fail="0" skip="0">While</stat>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>
