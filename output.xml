@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-11T08:43:42.856892" rpa="false" schemaversion="5">
+<suite id="s1" name="While" source="d:\AUTOMAÇÃO\Robot_Framework\adopet-for-robot\while.robot">
+<test id="s1-t1" name="Cso de teste FOR" line="12">
+<kw name="5 - Usando o While Loop">
+<while condition="${COUNT} &lt; 5">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.917956" level="INFO">O contador é: 0</msg>
+<arg>O contador é: ${COUNT}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.917462" elapsed="0.004668"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.923895" level="INFO">${COUNT} = 1</msg>
+<var>${COUNT}</var>
+<arg>${COUNT} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.922806" elapsed="0.001524"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.916325" elapsed="0.008300"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.925907" level="INFO">O contador é: 1</msg>
+<arg>O contador é: ${COUNT}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.925354" elapsed="0.001136"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.928029" level="INFO">${COUNT} = 2</msg>
+<var>${COUNT}</var>
+<arg>${COUNT} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.927067" elapsed="0.001333"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.924798" elapsed="0.003921"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.929977" level="INFO">O contador é: 2</msg>
+<arg>O contador é: ${COUNT}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.929588" elapsed="0.000670"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.931079" level="INFO">${COUNT} = 3</msg>
+<var>${COUNT}</var>
+<arg>${COUNT} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.930557" elapsed="0.000741"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.928982" elapsed="0.002518"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.933332" level="INFO">O contador é: 3</msg>
+<arg>O contador é: ${COUNT}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.932781" elapsed="0.000912"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.935273" level="INFO">${COUNT} = 4</msg>
+<var>${COUNT}</var>
+<arg>${COUNT} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.934245" elapsed="0.001317"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.932005" elapsed="0.003768"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.936806" level="INFO">O contador é: 4</msg>
+<arg>O contador é: ${COUNT}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.936431" elapsed="0.000643"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-11T08:43:42.937917" level="INFO">${COUNT} = 5</msg>
+<var>${COUNT}</var>
+<arg>${COUNT} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-11T08:43:42.937373" elapsed="0.000816"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.935921" elapsed="0.002459"/>
+</iter>
+<status status="PASS" start="2025-06-11T08:43:42.916322" elapsed="0.022409"/>
+</while>
+<status status="PASS" start="2025-06-11T08:43:42.915430" elapsed="0.023699"/>
+</kw>
+<status status="PASS" start="2025-06-11T08:43:42.913970" elapsed="0.025854"/>
+</test>
+<status status="PASS" start="2025-06-11T08:43:42.868191" elapsed="0.074177"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="While" id="s1" pass="1" fail="0" skip="0">While</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
