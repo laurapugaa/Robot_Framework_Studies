@@ -18,6 +18,8 @@ ${CHAT_RESPONSAVEL_DUNGA}    //*[@id="root"]/main/section/div/div[1]/a
 # ${CHAT_RESPONSAVEL_AMORA}    //*[@id="root"]/main/section/div/div[8]/a
 # ${CHAT_RESPONSAVEL_ZELDA}    //*[@id="root"]/main/section/div/div[9]/a
 
+#//span[contains(text(), "TEXTO DO ITEM")]
+
 ${NOME}    //*[@id="name"]
 ${TELEFONE}    //*[@id="phone"]
 ${NOME_ANIMAL}    //*[@id="petName"]
